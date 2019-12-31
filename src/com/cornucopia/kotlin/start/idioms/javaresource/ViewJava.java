@@ -1,4 +1,4 @@
-package com.cornucopia.kotlin.start.idioms;
+package com.cornucopia.kotlin.start.idioms.javaresource;
 
 /**
  * @author cornucopia

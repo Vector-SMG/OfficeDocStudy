@@ -1,9 +1,8 @@
 package com.cornucopia.kotlin.start.idioms
 
-import kotlin.properties.Delegates
 
 /**
- * kotlin-习惯用法-let,with,run,apply,also函数的使用
+ * kotlin-习惯用法(二)-let,with,run,apply,also函数的使用
  * kotlin中的源码标准库(Standard.kt)中提供了一些kotlin扩展的内置函数可以优化kotlin的编码。
  * Standard.kt是kotlin库的一部分，它定义了一些基本函数。这个源文件虽然不到50行代码，但是函数功能都非常强大。
  *
@@ -22,9 +21,10 @@ interface OnClickListener {
 }
 
 open class MyOnClickListener : OnClickListener {
-
     override fun onClick(str: String, int: Int) {
+
     }
+
 
     override fun onSingleTap() {
     }
