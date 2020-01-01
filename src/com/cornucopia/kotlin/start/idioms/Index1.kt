@@ -21,6 +21,7 @@ interface OnClickListener {
 }
 
 open class MyOnClickListener : OnClickListener {
+
     override fun onClick(str: String, int: Int) {
 
     }
@@ -149,24 +150,25 @@ fun testRun() {
 //5.1 apply和run的区别在于:apply的返回值是返回传入对象本身;run的返回值在于最后一行。
 //5.2 一般用于对一个对象属性进行赋值。
 
-class Person(var name: String){
+class Person(var name: String) {
 
     override fun toString(): String {
         return "name:$name"
     }
 }
 
-class UserCopy(var name:String,var age:Int,var person: Person) {
+class UserCopy(var name: String, var age: Int, var person: Person) {
 
-    var city="东莞"
+    var city = "东莞"
 
     override fun toString(): String {
         return "name:$name age:$age city:$city person:$person"
     }
 }
+
 fun testApply() {
-    var person=Person("lj")
-    val user = UserCopy("lw", 111,person)
+    var person = Person("lj")
+    val user = UserCopy("lw", 111, person)
 //    val result = user.apply {
 //        this.name="lw1"
 //        this.age=11
@@ -175,18 +177,18 @@ fun testApply() {
 //    println("result:$result")
 
     //apply多嵌套级别判空
-    var result1= user?.apply {
-        this.name="lzf"
+    var result1 = user?.apply {
+        this.name = "lzf"
     }?.person.apply {
-        this.name="lj1"
+        this.name = "lj1"
     }
     println("user:$user")
 }
 
 //6.内联扩展函数之also
 //6.1 also函数和let很像,let返回函数体内最后一行;also返回传入的对象。
-fun testAlso(){
-    val result="test".also {
+fun testAlso() {
+    val result = "test".also {
         println(it.length)
         1000
     }
