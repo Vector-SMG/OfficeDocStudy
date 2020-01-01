@@ -30,7 +30,6 @@ fun testTryWithResources() {
 fun testCanNullBool() {
     val b: Boolean? = null
     if (b == true) {
-
     } else {
         println(b)
     }
