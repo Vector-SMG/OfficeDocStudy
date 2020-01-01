@@ -146,7 +146,7 @@ fun testRun() {
 }
 
 //5.内联扩展函数之apply
-//5.1 apply和run的区别在于:apply的返回值是返回传入对象本省;run的返回值在于最后一行。
+//5.1 apply和run的区别在于:apply的返回值是返回传入对象本身;run的返回值在于最后一行。
 //5.2 一般用于对一个对象属性进行赋值。
 
 class Person(var name: String){

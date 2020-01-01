@@ -27,6 +27,7 @@ fun testTryWithResources() {
 //2.需要泛型信息的泛型函数的适宜形式 TODO("完善对范型的理解")
 
 //3.使用可空布尔
+
 fun testCanNullBool() {
     val b: Boolean? = null
     if (b == true) {
